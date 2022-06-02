@@ -18,14 +18,14 @@ public class BOJ_1735 {
         // 최대공약수 구하기
         int gcd = eucd(x, y);
 
-        x = x/gcd;
-        y = y/gcd;
-        System.out.println(x + " " +y);
+        x = x / gcd;
+        y = y / gcd;
+        System.out.println(x + " " + y);
     }
 
-    public static int eucd(int a, int b){
-        while(b!=0){
-            int x = a%b;
+    public static int eucd(int a, int b) {
+        while (b != 0) {
+            int x = a % b;
             a = b;
             b = x;
         }
